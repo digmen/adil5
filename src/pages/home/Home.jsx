@@ -1,6 +1,4 @@
 import cls from './home.module.scss';
-import HeaderHome from '../../components/headerHome/HeaderHome';
-import FooterHome from '../../components/footerHome/FooterHome';
 import { useTranslation } from 'react-i18next';
 import man from './images/man.png';
 import { Link } from 'react-router-dom';
@@ -32,12 +30,12 @@ const Home = () => {
                   <p>{t('descMotorbike')}</p>
                 </div>
                 <div className={cls.card}>
-                  <span>{t('motorbike')}</span>
-                  <p>{t('descMotorbike')}</p>
+                  <span>{t('motorbike2')}</span>
+                  <p>{t('descMotorbike2')}</p>
                 </div>
                 <div className={cls.card}>
-                  <span>{t('motorbike')}</span>
-                  <p>{t('descMotorbike')}</p>
+                  <span>{t('motorbike3')}</span>
+                  <p>{t('descMotorbike3')}</p>
                 </div>
               </div>
               <Link to='/product'>

@@ -21,15 +21,15 @@ function Contact() {
           </li>
           <li>
             <h2>EMAIL:</h2>
-            <a type="gmail">alphaimpex.org@outlook.com</a>
+            <a type="gmail">steeldesignfze.ae@gmail.com</a>
           </li>
           <li>
             <h2>PHONE NUMBER:</h2>
-            <a href="tel:+902123456789">+90 212 345 67 89</a>
+            <a href="tel:+971501234567">+971 50 123 4567</a>
           </li>
           <li>
             <h2>LOCATION:</h2>
-            <span>Atakoy 7-8-9-10. Kisim mah. Cobançesme <br /> e-5 yan yol cad. A no: 22 /1 Iç Kapi no: 30 <br />bakirkoy/ Istanbul/Turkey</span>
+            <span>SAIF EXECUTIVE OFFICE P8-03-01</span>
           </li>
           <li></li>
         </ol>
