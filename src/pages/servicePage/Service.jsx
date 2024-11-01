@@ -71,17 +71,14 @@ function Service() {
           </ul>
         </div>
         <div>
-          <h2>Product Range and Categories</h2>
+          <h2>EASSY AND CONVENIENT TO USE</h2>
           <ul>
             <li className={styles.noLi}></li>
-
             <li>
-              A wide range of products: from food and beverages to household
-              appliances and textiles.
+            Ergonomic design that reduces the load on the hands and simplifies access to hard-to-reach places.
             </li>
             <li>
-              Quality products: we work only with trusted suppliers and
-              guarantee the high quality of all products.
+            Easy installation and setup — intuitive instructions and a minimum number of steps.
             </li>
             <li>
               Special offers: regularly updated discounts and promotions for

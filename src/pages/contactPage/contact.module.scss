@@ -10,12 +10,19 @@
   background-position: center;
   // position: relative;  
   overflow: hidden;
+  margin: 0 auto;
+  @include screen(426px){
+    height: 550px;
+  }
+  @include screen(376px){
+    height: 450px;
+  }
   .title {
     // position: absolute;
     margin-top: 37px;
     width: 300px;
     background: rgba(31, 120, 225, 1);
-    padding: 15px;
+    padding:0 15px;
     border-radius: 0 82px 82px 0;
     // top: 100px;
     // left: -105px;
@@ -27,11 +34,11 @@
       margin: 0;
     }
     @include screen(376px){
-      width: 375px;
+      width: 100%;
     }
-    @include screen(320px){
-      width: 320px;
-    }
+    // @include screen(320px){
+    //   width: 320px;
+    // }
     
     h1 {
       color: #fff;
@@ -39,6 +46,10 @@
       font-size: 52px;
       font-weight: 300;
       line-height: 78px;
+      @include screen(376px){
+        font-size: 29px;
+        line-height: 54px;
+      }
     }
   }
   .backBlock {
@@ -52,6 +63,7 @@
     text-align: center;
     @include screen(426px){
       align-items: start;
+      height: 400px;
     }
     ol {
       list-style-type: none;
@@ -59,8 +71,15 @@
       flex-direction: column;
       gap: 50px;
       @include screen(426px){
-        gap: 50px;
+        gap: 30px;
       }
+      @include screen(376px){
+        gap: 10px;
+      }
+      @include screen(320px){
+        gap: 10px;
+      }
+      
       h2 {
         font-weight: 600;
         font-size: 45px;
@@ -68,10 +87,13 @@
         text-align: center;
         @include screen(426px){
           line-height: 40px;
-          font-size: 40px;
+          font-size: 30px;
+        }
+        @include screen(376px){
+          font-size: 20px;
         }
         @include screen(320px){
-          font-size: 35px;
+          font-size: 20px;
         }
       }
       a,

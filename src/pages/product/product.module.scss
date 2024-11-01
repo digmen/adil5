@@ -1,190 +1,135 @@
+@import "/src/source/mixin.scss";
 .main {
-  .aboutUs_wrap {
-    width: 1350px;
-    margin: 70px auto;
+  .title {
+    // position: absolute;
+    margin-top: 37px;
+    width: 300px;
+    background: rgba(31, 120, 225, 1);
+    padding: 0 15px;
+    border-radius: 0 82px 82px 0;
+    // top: 100px;
+    // left: -105px;
+    text-align: end;
+    @include screen(426px) {
+      width: 426px;
+      border-radius: 0;
+      text-align: center;
+      margin: 0;
+    }
+    @include screen(376px) {
+      width: 375px;
+    }
+    @include screen(320px) {
+      width: 320px;
+    }
+
     h1 {
+      color: #fff;
+      // font-size: 28px;
       font-size: 52px;
       font-weight: 300;
-    }
-    .title {
-      position: absolute;
-      width: 250px;
-      background: rgba(31, 120, 225, 1);
-      padding: 15px;
-      border-radius: 30px;
-      top: 80px;
-      left: -20px;
-      h1 {
-        padding-left: 100px;
-        color: #fff;
-        font-size: 28px;
-        font-weight: 300;
+      line-height: 78px;
+
+      @include screen(376px){
+        font-size: 29px;
+        line-height: 54px;
       }
     }
-    .sides {
-      width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: row;
-      padding-top: 50px;
-      gap: 200px;
-      .right {
+  }
+  h3,
+  p,
+  a,
+  span,
+  li,
+  h2,
+  h1 {
+    color: #6b7280;
+  }
+  .card {
+    padding: 40px 177px 0 177px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    &:last-of-type {
+      padding: 33px 177px 30px 177px;
+    }
+    @include screen(768px) {
+      padding: 40px 100px 0 100px;
+      &:last-of-type {
+        padding: 33px 100px 200px 100px;
+      }
+    }
+    @include screen(426px) {
+      flex-direction: column-reverse;
+      padding: 40px 37px;
+      &:nth-of-type(2) {
         display: flex;
         flex-direction: column;
-        gap: 105px;
-        .history {
-          display: flex;
-          flex-direction: column;
-          gap: 30px;
-          h2 {
-            font-size: 24px;
-            font-weight: 700;
-            color: rgba(107, 114, 128, 1);
-          }
-          p {
-            font-size: 18px;
-            font-weight: 400;
-          }
-          ul {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            padding-left: 20px;
-            color: rgba(107, 114, 128, 1);
-          }
-        }
-        .expansion {
-          display: flex;
-          flex-direction: column;
-          gap: 30px;
-          h2 {
-            font-size: 24px;
-            font-weight: 700;
-            color: rgba(107, 114, 128, 1);
-          }
-          p {
-            font-size: 18px;
-            font-weight: 400;
-          }
-          ul {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            padding-left: 20px;
-            color: rgba(107, 114, 128, 1);
-          }
-        }
       }
-      .left {
-        display: flex;
-        flex-direction: column;
-        gap: 105px;
-        align-items: flex-end;
-        .rapid {
-          display: flex;
-          flex-direction: column;
-          gap: 30px;
-          h2 {
-            font-size: 24px;
-            font-weight: 700;
-            color: rgba(107, 114, 128, 1);
-          }
-          p {
-            font-size: 18px;
-            font-weight: 400;
-          }
-          ul {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            padding-left: 20px;
-            color: rgba(107, 114, 128, 1);
-          }
-        }
-        .look {
-          display: flex;
-          flex-direction: column;
-          gap: 30px;
-          h2 {
-            font-size: 24px;
-            font-weight: 700;
-            color: rgba(107, 114, 128, 1);
-          }
-          p {
-            font-size: 18px;
-            font-weight: 400;
-          }
-          ul {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            padding-left: 20px;
-            color: rgba(107, 114, 128, 1);
-          }
-        }
+      &:last-of-type {
+        padding: 33px 37px;
       }
     }
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-  .main {
-    max-width: 1024px;
-    width: 100%;
-    .aboutUs_wrap {
-      width: 1000px;
-      margin: 40 auto;
-      .sides {
-        width: 1000px;
-        display: flex;
-        flex-direction: row;
-        gap: 80px;
+    @include screen(376px) {
+      padding: 40px 12.5px;
+      &:last-of-type {
+        padding: 33px 12.5px;
       }
     }
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .main {
-    max-width: 768px;
-    width: 100%;
-    .aboutUs_wrap {
-      width: 700px;
-      margin: 30px auto;
-      .sides {
-        width: 700px;
-        display: flex;
-        flex-direction: row;
-        gap: 50px;
-        .right {
-          width: 330px;
-        }
-        .left {
-          width: 330px;
-        }
+    @include screen(321px) {
+      padding: 10px 12.5px;
+      &:last-of-type {
+        padding: 10px 12.5px;
       }
     }
-  }
-}
-
-@media screen and (min-width: 426px) and (max-width: 769px) {
-  .main {
-    max-width: 425px;
-    width: 100%;
-    .aboutUs_wrap {
-      width: 400px;
-      margin: 30px auto;
-      .sides {
+    img {
+      width: 480px;
+      height: 257px;
+      border-radius: 5px;
+      @include screen(1025px) {
         width: 400px;
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        margin: 0 auto;
-        .right {
-          width: 400px;
+        height: auto;
+      }
+      @include screen(768px) {
+        width: 350px;
+        height: auto;
+      }
+      @include screen(320px) {
+        width: 300px;
+        height: auto;
+      }
+    }
+    ul {
+      padding: 32px 37px;
+
+      @include screen(768px) {
+        padding: 32px 0 37px 0;
+      }
+      h3 {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 39px;
+        text-align: left;
+        @include screen(768px) {
+          padding-bottom: 15px;
         }
-        .left {
-          width: 400px;
+      }
+      li {
+        margin-left: 20px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: left;
+        padding-top: 15px;
+        &:first-of-type {
+          padding-top: 18px;
+        }
+        @include screen(1025px) {
+          padding: 0;
+          &:first-of-type {
+            padding: 0;
+          }
         }
       }
     }

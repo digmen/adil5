@@ -1,162 +1,169 @@
+@import "/src/source/mixin.scss";
 .main {
-  .aboutUs_wrap {
-    width: 1350px;
-    margin: 70px auto;
+  padding: 0 0 100px;
+  .title {
+    // position: absolute;
+    margin-top: 37px;
+    width: 300px;
+    background: rgba(31, 120, 225, 1);
+    padding: 0 15px;
+    border-radius: 0 82px 82px 0;
+    // top: 100px;
+    // left: -105px;
+    text-align: end;
+    @include screen(426px) {
+      width: 426px;
+      border-radius: 0;
+      text-align: center;
+      margin: 0;
+    }
+    @include screen(376px) {
+      width: 375px;
+    }
+    @include screen(320px) {
+      width: 320px;
+    }
+
     h1 {
+      color: #fff;
+      // font-size: 28px;
       font-size: 52px;
       font-weight: 300;
-    }
-    .title {
-      position: absolute;
-      width: 250px;
-      background: rgba(31, 120, 225, 1);
-      padding: 15px;
-      border-radius: 30px;
-      top: 100px;
-      left: -30px;
-      h1 {
-        padding-left: 100px;
-        color: #fff;
-        font-size: 40px;
-        font-weight: 300;
+      line-height: 78px;
+      @include screen(376px){
+        font-size: 29px;
+        line-height: 54px;
       }
     }
-    .sides {
-      width: 1200px;
+  }
+  .cards {
+    padding-top: 57px;
+    display: flex;
+    flex-direction: column;
+    gap: 57px;
+    @include screen(426px){
+      gap: 30px;
+      padding-top: 20px;
+    }
+    img {
+      width: 429px;
+      height: 260px;
+      border-radius: 5px;
+      @include screen(768px){
+        width: 350px;
+        height: 200px;
+      }
+      @include screen(376px){
+        width: 300px;
+        height: 160px;
+      }
+    }
+    .divType {
+      width: 1108px;
       margin: 0 auto;
       display: flex;
-      flex-direction: row;
-      padding-top: 120px;
-      gap: 200px;
-      .right {
-        display: flex;
-        flex-direction: column;
-        gap: 125px;
-        .history {
-          display: flex;
-          flex-direction: column;
-          gap: 40px;
-          padding-top: 10px;
-          h2 {
-            font-size: 24px;
-            font-weight: 700;
-          }
-          p {
-            font-size: 18px;
-            font-weight: 400;
-          }
-        }
-        .expansion {
-          display: flex;
-          flex-direction: column;
-          gap: 30px;
-          h2 {
-            font-size: 24px;
-            font-weight: 700;
-          }
-          p {
-            padding-bottom: 60px;
-            font-size: 18px;
-            font-weight: 400;
-          }
-        }
+      justify-content: space-between;
+      align-items: center; 
+      padding: 0 40px; 
+      @include screen(1024px){
+        width: 100%;
       }
-      .left {
+      @include screen(426px){
+        flex-direction: column;
+      }
+      @include screen(376px){
+        gap: 20px;
+      }
+      div {
+        padding: 20px 40px;
+        width: 470px;
         display: flex;
         flex-direction: column;
-        gap: 105px;
-        .rapid {
-          display: flex;
-          flex-direction: column;
-          gap: 30px;
-          
-          h2 {
-            padding-top: 30px;
-            font-size: 24px;
-            font-weight: 700;
-          }
-          p {
-            font-size: 18px;
-            font-weight: 400;
+        gap: 20px;
+        text-align: start;
+        @include screen(768px){
+          gap: 10px;
+        }
+        @include screen(376px){
+          width: 300px;
+          padding: 0;
+        }
+        h1 {
+          // font-family: Futura;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 23.87px;
+          text-align: left;
+          color: #6b7280;
+          @include screen(768px){
+            font-size: 14px;
+            line-height: 16px;
           }
         }
-        .look {
-          display: flex;
-          flex-direction: column;
-          gap: 30px;
-          h2 {
-            font-size: 24px;
-            font-weight: 700;
-            padding-top: 40px;
-          }
-          p {
-            font-size: 18px;
-            font-weight: 400;
+        p {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 21.58px;
+          text-align: left;
+          color: #6b7280;
+          @include screen(768px){
+            font-size: 12px;
+            line-height: 15px;
           }
         }
       }
     }
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-  .main {
-    max-width: 1024px;
-    width: 100%;
-    .aboutUs_wrap {
-      width: 1000px;
-      margin: 40 auto;
-      .sides {
-        width: 1000px;
-        display: flex;
-        flex-direction: row;
-        gap: 80px;
+    .divType2 {
+      width: 1108px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+      padding: 0 40px; 
+      @include screen(1024px){
+        width: 100%;
       }
-    }
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .main {
-    max-width: 768px;
-    width: 100%;
-    .aboutUs_wrap {
-      width: 700px;
-      margin: 30px auto;
-      .sides {
-        width: 700px;
-        display: flex;
-        flex-direction: row;
-        gap: 50px;
-        .right {
-          width: 330px;
-        }
-        .left {
-          width: 330px;
-        }
+      @include screen(426px){
+        flex-direction: column-reverse;
       }
-    }
-  }
-}
-
-@media screen and (min-width: 426px) and (max-width: 769px) {
-  .main {
-    max-width: 425px;
-    width: 100%;
-    .aboutUs_wrap {
-      width: 400px;
-      margin: 30px auto;
-      .sides {
-        width: 400px;
+      @include screen(376px){
+        gap: 20px;
+      }
+      div {
+        padding: 20px 40px;
+        width: 459px;
         display: flex;
         flex-direction: column;
-        gap: 40px;
-        margin: 0 auto;
-        .right {
-          width: 400px;
+        gap: 20px;
+        text-align: start;
+        @include screen(768px){
+          gap: 10px;
         }
-        .left {
-          width: 400px;
+        @include screen(376px){
+          width: 300px;
+          padding: 0;
+        }
+        h1 {
+          // font-family: Futura;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 23.87px;
+          text-align: left;
+          color: #6b7280;
+          @include screen(768px){
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+        p {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 21.58px;
+          text-align: left;
+          color: #6b7280;@include screen(768px){
+            font-size: 12px;
+            line-height: 15px;
+          }
         }
       }
     }

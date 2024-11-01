@@ -29,7 +29,9 @@ function Contact() {
           </li>
           <li>
             <h2>LOCATION:</h2>
-            <span>SAIF EXECUTIVE OFFICE P8-03-01</span>
+            <span>
+            SAIF EXECUTIVE OFFICE P8-03-01
+            </span>
           </li>
           <li></li>
         </ol>

@@ -16,7 +16,7 @@ const FooterHome = () => {
             <span>Reliability in every detail  quality for your comfort</span>
           </div>
           <div className={cls.menu}>
-            <span>menu</span>
+            <p>Menu</p>
             <nav>
               <Link to="/">{t('home')}</Link>
               <Link to="/aboutus">{t('about')}</Link>
@@ -28,20 +28,20 @@ const FooterHome = () => {
           <div className={cls.contacts}>
             <div className={cls.number}>
               <span className={cls.spanBig}>Telephone <br />Number</span>
-              <span><a href="tel:+971 50 123 4567">+971 50 123 4567</a></span>
+              <p><a href="tel:+971 50 123 4567">+971 50 123 4567</a></p>
             </div>
             <div className={cls.email}>
               <span className={cls.spanBig}>Our Mail</span>
-              <span>steeldesignfze.ae@gmail.com</span>
+              <p>steeldesignfze.ae@gmail.com</p>
             </div>
           </div>
           <div className={cls.descSquer}>
             <span className={cls.span1}>Addres </span>
-            <span>SAIF EXECUTIVE </span>
-            <span>OFFICE P8-03-01</span>
+            <p>SAIF EXECUTIVE </p>
+            <p>OFFICE P8-03-01</p>
           </div>
         </div>
-        <span className={cls.span1}>© Company name and some information about cmp</span>
+        <span className={cls.span1}>© Company name and some information about <br />cmp</span>
       </div>
     </footer>
   );
