@@ -36,7 +36,7 @@ const FooterHome = () => {
             </div>
           </div>
           <div className={cls.descSquer}>
-            <span className={cls.span1}>Addres </span>
+            <span className={cls.span1}>Address</span>
             <p>SAIF EXECUTIVE </p>
             <p>OFFICE P8-03-01</p>
           </div>
